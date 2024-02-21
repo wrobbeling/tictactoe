@@ -13,17 +13,15 @@ namespace WindowsFormsGame
 {
     public partial class Form1 : Form
     {
-       
-
-        private void Form1_Load(object sender, EventArgs e)
+       private void Form1_Load(object sender, EventArgs e)
         {
         }
 
         private SoundPlayer soundPlayer; // SoundPlayer-Instanz für das Abspielen des Sounds
-        private bool gegenComputer = false;
-        private int spielerXGewinne = 0;
-        private int spielerOGewinne = 0;
-        private bool xTurn = true; // Variable, um den Spieler zu verfolgen
+        public bool gegenComputer { get; set; } = false;
+        public int spielerXGewinne { get; set; }
+        public int spielerOGewinne { get; set; }
+        public bool xTurn { get; set; } = true;  // Variable, um den Spieler zu verfolgen
 
 
         public Form1()
